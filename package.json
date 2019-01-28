@@ -1,0 +1,23 @@
+{
+  "name": "koa-server",
+  "description": "An attempt at a completely typesafe RESTful API with koa",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "joi": "^14.0.0",
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0",
+    "mongodb": "^3.1.13",
+    "typesafe-joi": "^1.0.0-beta4"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-router": "^7.0.39",
+    "typescript": "^3.2.4"
+  }
+}
